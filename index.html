@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>BlackOS Market Widget</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href="css/market.css">
+
+</head>
+
+<body>
+
+<div class="market-card">
+
+<div class="top">
+
+<div class="title">
+
+<div class="live-dot"></div>
+
+LIVE MARKET
+
+</div>
+
+<div class="online">
+
+ONLINE
+
+</div>
+
+</div>
+
+<div class="coins">
+
+<!-- Bitcoin -->
+
+<div class="coin">
+
+<div class="left">
+
+<div class="icon btc">
+₿
+</div>
+
+<div>
+
+<h3>Bitcoin</h3>
+
+<p>BTC</p>
+
+</div>
+
+</div>
+
+<div class="right">
+
+<div class="price" id="btc-price">
+Loading...
+</div>
+
+<div class="change down" id="btc-change">
+--
+</div>
+
+<canvas id="btcChart" width="110" height="32"></canvas>
+
+</div>
+
+</div>
+
+<!-- Ethereum -->
+
+<div class="coin">
+
+<div class="left">
+
+<div class="icon eth">
+Ξ
+</div>
+
+<div>
+
+<h3>Ethereum</h3>
+
+<p>ETH</p>
+
+</div>
+
+</div>
+
+<div class="right">
+
+<div class="price" id="eth-price">
+
+Loading...
+
+</div>
+
+<div class="change down" id="eth-change">
+
+--
+
+</div>
+
+<canvas id="ethChart" width="110" height="32"></canvas>
+
+</div>
+
+</div>
+
+
+<!-- XRP -->
+
+<div class="coin">
+
+<div class="left">
+
+<div class="icon xrp">
+✕
+</div>
+
+<div>
+
+<h3>XRP</h3>
+
+<p>XRP</p>
+
+</div>
+
+</div>
+
+<div class="right">
+
+<div class="price" id="xrp-price">
+Loading...
+</div>
+
+<div class="change down" id="xrp-change">
+--
+</div>
+
+<canvas id="xrpChart" width="110" height="32"></canvas>
+
+</div>
+
+</div>
+
+<!-- Gold -->
+
+<div class="coin">
+
+<div class="left">
+
+<div class="icon gold">
+🟡
+</div>
+
+<div>
+
+<h3>Gold</h3>
+
+<p>XAU/USD</p>
+
+</div>
+
+</div>
+
+<div class="right">
+
+<div class="price" id="gold-price">
+Loading...
+</div>
+
+<div class="change up" id="gold-change">
+--
+</div>
+
+<canvas id="goldChart" width="110" height="32"></canvas>
+
+</div>
+
+</div>
+
+<!-- EUR/USD -->
+
+<div class="coin">
+
+<div class="left">
+
+<div class="icon eur">
+$
+</div>
+
+<div>
+
+<h3>EUR/USD</h3>
+
+<p>Forex</p>
+
+</div>
+
+</div>
+
+<div class="right">
+
+<div class="price" id="eur-price">
+Loading...
+</div>
+
+<div class="change up" id="eur-change">
+--
+</div>
+
+<canvas id="eurChart" width="110" height="32"></canvas>
+
+</div>
+
+</div>
+</div>
+
+
+<div class="footer">
+
+<div id="update">
+Last Update : --
+</div>
+
+</div>
+
+</div>
+
+<script src="js/market.js"></script>
+
+</body>
+
+</html>
